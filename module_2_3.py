@@ -3,8 +3,11 @@ idx = 0
 
 my_list = list(my_list)
 while True:
-    if int(my_list[idx]) < 0:
+    if idx == len(my_list):
         break
+
+    if int(my_list[idx]) < 0:
+       break
 
     elif int(my_list[idx]) > 0:
         print(my_list[idx])
